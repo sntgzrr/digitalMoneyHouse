@@ -12,6 +12,10 @@ import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.*;
 
 @Service
@@ -22,11 +26,16 @@ public class KeycloakUserServiceImpl implements KeycloakUserService{
     @Value("${keycloak.realm}")
     private String realm;
     private final Keycloak keycloak;
+    private static final String ALIAS_FILE_PATH = "/alias.txt";
+
     @Override
     public UserRegistrationRecord createUser(UserRegistrationRecord userRegistrationRecord) {
+        String alias = generateAlias();
+        String cvu = generateCVU();
+
         UserRepresentation user = new UserRepresentation();
         user.setEnabled(true);
-        user.setUsername(userRegistrationRecord.username());
+        user.setUsername(alias);
         user.setEmail(userRegistrationRecord.email());
         user.setFirstName(userRegistrationRecord.firstName());
         user.setLastName(userRegistrationRecord.lastName());
@@ -35,7 +44,7 @@ public class KeycloakUserServiceImpl implements KeycloakUserService{
         Map<String, List<String>> attributes = new LinkedHashMap<>();
         attributes.put("dni", Collections.singletonList(userRegistrationRecord.dni()));
         attributes.put("phone", Collections.singletonList(userRegistrationRecord.phone()));
-        attributes.put("cvu", Collections.singletonList(userRegistrationRecord.cvu()));
+        attributes.put("cvu", Collections.singletonList(cvu));
         user.setAttributes(attributes);
 
         CredentialRepresentation credentialRepresentation = new CredentialRepresentation();
@@ -52,7 +61,14 @@ public class KeycloakUserServiceImpl implements KeycloakUserService{
         Response response = usersResource.create(user);
 
         if (Objects.equals(201, response.getStatus())){
-            return userRegistrationRecord;
+            return new UserRegistrationRecord(
+                    userRegistrationRecord.email(),
+                    userRegistrationRecord.firstName(),
+                    userRegistrationRecord.lastName(),
+                    null,
+                    userRegistrationRecord.dni(),
+                    userRegistrationRecord.phone()
+            );
         }
 
         return null;
@@ -71,5 +87,40 @@ public class KeycloakUserServiceImpl implements KeycloakUserService{
     @Override
     public void deleteUserById(String userId) {
         getUsersResource().delete(userId);
+    }
+
+    private String generateAlias() {
+        List<String> aliases;
+        try {
+            InputStream inputStream = getClass().getResourceAsStream(ALIAS_FILE_PATH);
+            if (inputStream == null) {
+                log.error("Alias file not found in classpath.");
+                return null;
+            }
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            aliases = new ArrayList<>(reader.lines().toList());
+            reader.close();
+        } catch (IOException e) {
+            log.error("Error reading alias file: {}", e.getMessage());
+            return null;
+        }
+        Collections.shuffle(aliases);
+        while (aliases.size() < 3) {
+            List<String> copy = new ArrayList<>(aliases);
+            aliases.addAll(copy);
+        }
+        return String.join(".", aliases.subList(0, 3));
+    }
+
+    public static String generateCVU() {
+        String characters = "0123456789";
+        StringBuilder cvu = new StringBuilder();
+        int longCVU = 22;
+        Random rand = new Random();
+        for (int i = 0; i < longCVU; i++) {
+            int index = rand.nextInt(characters.length());
+            cvu.append(characters.charAt(index));
+        }
+        return cvu.toString();
     }
 }
