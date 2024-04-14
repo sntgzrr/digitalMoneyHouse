@@ -1,6 +1,7 @@
 package com.sntzgrr.services;
 
-import com.sntzgrr.dto.UserRegistrationRecord;
+import com.sntzgrr.dto.User;
+import com.sntzgrr.repositories.FeignUserServiceRepository;
 import jakarta.ws.rs.core.Response;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -26,29 +27,30 @@ public class KeycloakUserServiceImpl implements KeycloakUserService{
     @Value("${keycloak.realm}")
     private String realm;
     private final Keycloak keycloak;
+    private final FeignUserServiceRepository feignUserServiceRepository;
     private static final String ALIAS_FILE_PATH = "/alias.txt";
 
     @Override
-    public UserRegistrationRecord createUser(UserRegistrationRecord userRegistrationRecord) {
+    public User createUser(User userRegis) {
         String alias = generateAlias();
         String cvu = generateCVU();
 
         UserRepresentation user = new UserRepresentation();
         user.setEnabled(true);
         user.setUsername(alias);
-        user.setEmail(userRegistrationRecord.email());
-        user.setFirstName(userRegistrationRecord.firstName());
-        user.setLastName(userRegistrationRecord.lastName());
+        user.setEmail(userRegis.getEmail());
+        user.setFirstName(userRegis.getFirstName());
+        user.setLastName(userRegis.getLastName());
         user.setEmailVerified(true);
 
         Map<String, List<String>> attributes = new LinkedHashMap<>();
-        attributes.put("dni", Collections.singletonList(userRegistrationRecord.dni()));
-        attributes.put("phone", Collections.singletonList(userRegistrationRecord.phone()));
+        attributes.put("dni", Collections.singletonList(userRegis.getDni()));
+        attributes.put("phone", Collections.singletonList(userRegis.getPhone()));
         attributes.put("cvu", Collections.singletonList(cvu));
         user.setAttributes(attributes);
 
         CredentialRepresentation credentialRepresentation = new CredentialRepresentation();
-        credentialRepresentation.setValue(userRegistrationRecord.password());
+        credentialRepresentation.setValue(userRegis.getPassword());
         credentialRepresentation.setTemporary(false);
         credentialRepresentation.setType(CredentialRepresentation.PASSWORD);
 
@@ -60,15 +62,21 @@ public class KeycloakUserServiceImpl implements KeycloakUserService{
 
         Response response = usersResource.create(user);
 
+        userRegis.setCvu(cvu);
+        userRegis.setUsername(alias);
+        feignUserServiceRepository.createUser(userRegis);
+
         if (Objects.equals(201, response.getStatus())){
-            return new UserRegistrationRecord(
-                    userRegistrationRecord.email(),
-                    userRegistrationRecord.firstName(),
-                    userRegistrationRecord.lastName(),
-                    null,
-                    userRegistrationRecord.dni(),
-                    userRegistrationRecord.phone()
-            );
+            return new User(
+                    userRegis.getId(),
+                    userRegis.getFirstName(),
+                    userRegis.getLastName(),
+                    userRegis.getDni(),
+                    userRegis.getEmail(),
+                    userRegis.getPhone(),
+                    userRegis.getCvu(),
+                    userRegis.getUsername(),
+                    null);
         }
 
         return null;

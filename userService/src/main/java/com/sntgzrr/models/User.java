@@ -29,4 +29,5 @@ public class User implements Serializable {
     String cvu;
     @Column(name = "username", nullable = false)
     String username;
+    String password;
 }
