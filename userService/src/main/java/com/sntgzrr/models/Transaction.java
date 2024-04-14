@@ -6,22 +6,21 @@ import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
-@Entity(name = "Card")
-@Table(name = "\"Cards\"")
+@Entity(name = "Transaction")
+@Table(name = "\"Transactions\"")
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Card implements Serializable {
+public class Transaction implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    @Column(name = "type")
-    String type;
-    @Column(name = "number")
-    String number;
-    @Column(name = "cvv")
-    String cvv;
+    @Column(name = "amount", nullable = false)
+    BigDecimal amount;
+    @Column(name = "details")
+    String details;
     @ManyToOne
     @JoinColumn(name = "accountCVU", referencedColumnName = "cvu")
     Account account;

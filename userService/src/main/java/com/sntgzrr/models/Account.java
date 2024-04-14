@@ -1,8 +1,7 @@
 package com.sntgzrr.models;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Data;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.io.Serializable;
@@ -16,13 +15,11 @@ public class Account implements Serializable {
     @Id
     @Column(name = "cvu")
     String cvu;
+    @Column(name = "moneyAmount", columnDefinition = "decimal default 0.00")
+    BigDecimal moneyAmount;
+    @Column(name = "activity", columnDefinition = "integer default 0")
+    Integer activity;
     @OneToOne
     @JoinColumn(name = "userID", referencedColumnName = "id")
     User user;
-    @Column(name = "moneyAmount")
-    BigDecimal moneyAmount;
-    @Column(name = "transactions")
-    Integer transactions;
-    @Column(name = "activity")
-    Integer activity;
 }

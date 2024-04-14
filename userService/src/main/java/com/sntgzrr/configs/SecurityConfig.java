@@ -13,7 +13,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authorize ->
-                        authorize.requestMatchers("/users/{id}").hasAuthority("SCOPE_email")
+                        authorize.requestMatchers("/accounts/{id}").hasAuthority("SCOPE_email")
                                 .anyRequest().authenticated()
                 )
                 .oauth2ResourceServer(oauth2 -> oauth2
