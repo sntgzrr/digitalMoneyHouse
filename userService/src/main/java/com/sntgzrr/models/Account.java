@@ -17,8 +17,6 @@ public class Account implements Serializable {
     String cvu;
     @Column(name = "moneyAmount", columnDefinition = "decimal default 0.00")
     BigDecimal moneyAmount;
-    @Column(name = "activity", columnDefinition = "integer default 0")
-    Integer activity;
     @OneToOne
     @JoinColumn(name = "userID", referencedColumnName = "id")
     User user;

@@ -1,6 +1,7 @@
 package com.sntgzrr.controllers;
 
 import com.sntgzrr.models.Account;
+import com.sntgzrr.models.Activity;
 import com.sntgzrr.models.Card;
 import com.sntgzrr.models.Transaction;
 import com.sntgzrr.services.AccountServiceImpl;
@@ -51,5 +52,20 @@ public class AccountController {
     @DeleteMapping("/{userId}/cards/{cardId}")
     public void deleteCardByAccountUserIdAndId(@PathVariable Long userId, @PathVariable Long cardId){
         this.accountService.deleteCardByAccountUserIdAndId(userId, cardId);
+    }
+    @GetMapping("/{userId}/activity")
+    public ResponseEntity<List<Activity>> getActivitiesByAccountUserId(@PathVariable Long userId){
+        List<Activity> activities = this.accountService.getActivitiesByAccountUserId(userId);
+        if (!activities.isEmpty()){
+            return new ResponseEntity<>(activities, HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+    @GetMapping("/{userId}/activity/{transferId}")
+    public ResponseEntity<Activity> getActivityByAccountUserIdAndTransferId(@PathVariable Long userId, @PathVariable Long transferId){
+        return this.accountService.getActivityByAccountUserIdAndTransferId(userId, transferId)
+                .map(activity -> new ResponseEntity<>(activity, HttpStatus.OK))
+                .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 }

@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d04df612-bb92-494e-8edf-559ad222e80b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/CardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/services/CardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/models/Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/models/Transfer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/IActivityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/models/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/models/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/models/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/models/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/models/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/IAccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/IAccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/ICardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/ICardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/ITransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/ITransactionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/services/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/services/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +156,7 @@
       <workItem from="1712928308139" duration="2226000" />
       <workItem from="1712971234665" duration="7078000" />
       <workItem from="1713048844838" duration="13575000" />
-      <workItem from="1713190802083" duration="5583000" />
+      <workItem from="1713190802083" duration="9797000" />
     </task>
     <servers />
   </component>

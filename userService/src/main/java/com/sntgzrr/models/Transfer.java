@@ -8,20 +8,17 @@ import lombok.experimental.FieldDefaults;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-@Entity(name = "Transaction")
-@Table(name = "\"Transactions\"")
+@Entity(name = "Transfer")
+@Table(name = "\"Transferences\"")
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Transaction implements Serializable {
+public class Transfer implements Serializable {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    @Column(name = "moneyAmount", nullable = false)
-    BigDecimal moneyAmount;
     @Column(name = "details")
     String details;
-    @ManyToOne
-    @JoinColumn(name = "accountCVU", referencedColumnName = "cvu")
-    Account account;
+    @Column(name = "moneyAmount")
+    BigDecimal moneyAmount;
 }
