@@ -1,16 +1,16 @@
 package com.sntgzrr.controllers;
 
 import com.sntgzrr.models.Account;
+import com.sntgzrr.models.Card;
 import com.sntgzrr.models.Transaction;
 import com.sntgzrr.services.AccountServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/accounts")
@@ -25,9 +25,31 @@ public class AccountController {
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
     @GetMapping("/{userId}/transactions")
-    public ResponseEntity<Transaction> getTransactionByAccountUserId(@PathVariable Long userId){
-        return accountService.getTransactionByAccountUserId(userId)
-                .map(transaction -> new ResponseEntity<>(transaction, HttpStatus.OK))
+    public ResponseEntity<List<Transaction>> getTransactionByAccountUserId(@PathVariable Long userId){
+        List<Transaction> transactions = this.accountService.getTransactionsByAccountUserId(userId);
+        if (!transactions.isEmpty()){
+            return new ResponseEntity<>(transactions, HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+    @GetMapping("/{userId}/cards")
+    public ResponseEntity<List<Card>> getCardsByAccountUserId(@PathVariable Long userId){
+        List<Card> cards = this.accountService.getCardsByAccountUserId(userId);
+        if (!cards.isEmpty()){
+            return new ResponseEntity<>(cards, HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+    @GetMapping("/{userId}/cards/{cardId}")
+    public ResponseEntity<Card> getCardByAccountUserIdAndId(@PathVariable Long userId, @PathVariable Long cardId){
+        return this.accountService.getCardByAccountUserIdAndId(userId, cardId)
+                .map(card -> new ResponseEntity<>(card, HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    }
+    @DeleteMapping("/{userId}/cards/{cardId}")
+    public void deleteCardByAccountUserIdAndId(@PathVariable Long userId, @PathVariable Long cardId){
+        this.accountService.deleteCardByAccountUserIdAndId(userId, cardId);
     }
 }

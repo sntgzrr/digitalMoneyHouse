@@ -17,11 +17,11 @@ public class Transaction implements Serializable {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    @Column(name = "amount", nullable = false)
-    BigDecimal amount;
+    @Column(name = "moneyAmount", nullable = false)
+    BigDecimal moneyAmount;
     @Column(name = "details")
     String details;
     @ManyToOne
     @JoinColumn(name = "accountCVU", referencedColumnName = "cvu")
-    Account account;
+    Account accountCVU;
 }

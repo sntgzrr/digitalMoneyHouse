@@ -24,4 +24,8 @@ public class UserController {
                 .map(user -> new ResponseEntity<>(user, HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
+    @PatchMapping
+    public User updateUser (@RequestBody User user){
+        return this.userService.saveUser(user);
+    }
 }
