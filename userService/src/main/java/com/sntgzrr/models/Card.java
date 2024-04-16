@@ -23,6 +23,6 @@ public class Card implements Serializable {
     @Column(name = "cvv")
     String cvv;
     @ManyToOne
-    @JoinColumn(name = "accountCVU", referencedColumnName = "cvu")
+    @JoinColumn(name = "account_cvu", referencedColumnName = "cvu")
     Account account;
 }

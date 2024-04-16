@@ -17,6 +17,6 @@ public class User {
     String email;
     String phone;
     String cvu;
-    String username;
+    String alias;
     String password;
 }

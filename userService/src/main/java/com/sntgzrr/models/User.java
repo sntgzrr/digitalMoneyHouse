@@ -27,7 +27,8 @@ public class User implements Serializable {
     String phone;
     @Column(name = "cvu", nullable = false)
     String cvu;
-    @Column(name = "username", nullable = false)
-    String username;
+    @Column(name = "alias", nullable = false)
+    String alias;
+    @Column(name = "password")
     String password;
 }

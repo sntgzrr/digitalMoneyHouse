@@ -1,9 +1,6 @@
 package com.sntgzrr.controllers;
 
-import com.sntgzrr.models.Account;
-import com.sntgzrr.models.Activity;
-import com.sntgzrr.models.Card;
-import com.sntgzrr.models.Transaction;
+import com.sntgzrr.models.*;
 import com.sntgzrr.services.AccountServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,5 +64,9 @@ public class AccountController {
         return this.accountService.getActivityByAccountUserIdAndTransferId(userId, transferId)
                 .map(activity -> new ResponseEntity<>(activity, HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    }
+    @PostMapping("/{cardId}/transferences")
+    public Transfer saveTransfer(@RequestBody Transfer transfer, @PathVariable Long cardId){
+        return this.accountService.saveTransfer(transfer, cardId);
     }
 }

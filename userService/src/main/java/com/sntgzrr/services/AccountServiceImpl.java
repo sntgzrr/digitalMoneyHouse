@@ -1,13 +1,7 @@
 package com.sntgzrr.services;
 
-import com.sntgzrr.models.Account;
-import com.sntgzrr.models.Activity;
-import com.sntgzrr.models.Card;
-import com.sntgzrr.models.Transaction;
-import com.sntgzrr.repositories.IAccountRepository;
-import com.sntgzrr.repositories.IActivityRepository;
-import com.sntgzrr.repositories.ICardRepository;
-import com.sntgzrr.repositories.ITransactionRepository;
+import com.sntgzrr.models.*;
+import com.sntgzrr.repositories.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +20,8 @@ public class AccountServiceImpl {
     private final ICardRepository iCardRepository;
     @Autowired
     private  final IActivityRepository iActivityRepository;
+    @Autowired
+    private final TransferServiceImpl transferService;
     public Account createAccount (Account account){
         return this.iAccountRepository.save(account);
     }
@@ -49,5 +45,8 @@ public class AccountServiceImpl {
     }
     public Optional<Activity> getActivityByAccountUserIdAndTransferId(Long userId, Long transferId){
         return this.iActivityRepository.findActivityByAccountUserIdAndTransferId(userId, transferId);
+    }
+    public Transfer saveTransfer(Transfer transfer, Long cardId){
+        return this.transferService.saveTransfer(transfer, cardId);
     }
 }

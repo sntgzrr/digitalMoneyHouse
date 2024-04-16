@@ -18,6 +18,6 @@ public class Account implements Serializable {
     @Column(name = "moneyAmount", columnDefinition = "decimal default 0.00")
     BigDecimal moneyAmount;
     @OneToOne
-    @JoinColumn(name = "userID", referencedColumnName = "id")
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     User user;
 }

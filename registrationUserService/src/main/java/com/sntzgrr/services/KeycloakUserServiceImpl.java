@@ -47,6 +47,7 @@ public class KeycloakUserServiceImpl implements KeycloakUserService{
         attributes.put("dni", Collections.singletonList(userRegis.getDni()));
         attributes.put("phone", Collections.singletonList(userRegis.getPhone()));
         attributes.put("cvu", Collections.singletonList(cvu));
+        attributes.put("alias", Collections.singletonList(alias));
         user.setAttributes(attributes);
 
         CredentialRepresentation credentialRepresentation = new CredentialRepresentation();
@@ -63,7 +64,8 @@ public class KeycloakUserServiceImpl implements KeycloakUserService{
         Response response = usersResource.create(user);
 
         userRegis.setCvu(cvu);
-        userRegis.setUsername(alias);
+        userRegis.setAlias(alias);
+        userRegis.setPassword(null);
         feignUserServiceRepository.createUser(userRegis);
 
         if (Objects.equals(201, response.getStatus())){
@@ -75,7 +77,7 @@ public class KeycloakUserServiceImpl implements KeycloakUserService{
                     userRegis.getEmail(),
                     userRegis.getPhone(),
                     userRegis.getCvu(),
-                    userRegis.getUsername(),
+                    userRegis.getAlias(),
                     null);
         }
 

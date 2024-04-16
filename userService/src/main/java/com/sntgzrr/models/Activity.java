@@ -19,9 +19,9 @@ public class Activity implements Serializable {
     @Column(name = "description")
     String description;
     @OneToOne
-    @JoinColumn(name = "transferID", referencedColumnName = "id")
+    @JoinColumn(name = "transfer_id", referencedColumnName = "id")
     Transfer transfer;
     @ManyToOne
-    @JoinColumn(name = "accountCVU", referencedColumnName = "cvu")
+    @JoinColumn(name = "account_cvu", referencedColumnName = "cvu")
     Account account;
 }

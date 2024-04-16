@@ -22,6 +22,6 @@ public class Transaction implements Serializable {
     @Column(name = "details")
     String details;
     @ManyToOne
-    @JoinColumn(name = "accountCVU", referencedColumnName = "cvu")
+    @JoinColumn(name = "account_cvu", referencedColumnName = "cvu")
     Account account;
 }

@@ -21,4 +21,7 @@ public class Transfer implements Serializable {
     String details;
     @Column(name = "moneyAmount")
     BigDecimal moneyAmount;
+    @ManyToOne
+    @JoinColumn(name = "card_id", referencedColumnName = "id")
+    Card card;
 }
