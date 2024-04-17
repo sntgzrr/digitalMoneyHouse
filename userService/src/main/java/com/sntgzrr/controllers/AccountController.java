@@ -13,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/accounts")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class AccountController {
     @Autowired
     private final AccountServiceImpl accountService;

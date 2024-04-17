@@ -10,6 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/cards")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class CardController {
     private final CardServiceImpl cardService;
     @GetMapping
