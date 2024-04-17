@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -47,6 +48,7 @@ public class AccountController {
                 .map(card -> new ResponseEntity<>(card, HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
+    @Transactional
     @DeleteMapping("/{userId}/cards/{cardId}")
     public void deleteCardByAccountUserIdAndId(@PathVariable Long userId, @PathVariable Long cardId){
         this.accountService.deleteCardByAccountUserIdAndId(userId, cardId);

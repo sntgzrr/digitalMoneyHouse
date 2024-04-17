@@ -12,8 +12,16 @@ spring:
         - TokenRelay=
       routes:
         - id: userService
-          uri: http://localhost:8082
+          uri: lb://userService
           predicates:
-            - Path=/users
+            - Path=/users/**
+        - id: userService
+          uri: lb://userService
+          predicates:
+            - Path=/cards/**
+        - id: userService
+          uri: lb://userService
+          predicates:
+            - Path=/accounts/**
 server:
   port: 9090
