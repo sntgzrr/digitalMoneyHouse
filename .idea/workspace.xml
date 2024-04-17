@@ -5,25 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d04df612-bb92-494e-8edf-559ad222e80b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eurekaServer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaServer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaServer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaServer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaServer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaServer/src/main/java/com/sntgzrr/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaServer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaServer/src/test/java/com/sntgzrr/EurekaServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configServer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configServer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configServer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configServer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configServer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configServer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configServer/src/main/java/com/sntgzrr/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configServer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configServer/src/test/java/com/sntgzrr/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/sntgzrr/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaServer/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/registrationUserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrationUserService/src/main/java/com/sntzgrr/repositories/FeignUserServiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/src/main/java/com/sntzgrr/repositories/FeignUserServiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationUserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +81,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.RegistrationUserServiceApplication (1).executor": "Run",
@@ -83,7 +89,7 @@
     "Spring Boot.UserServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Curso BackEnd/Desafío profesional back-end/digitalMoneyHouse/back-main/eurekaServer",
+    "last_opened_file_path": "C:/Curso BackEnd/Microservicios con Spring Cloud/practiceCode",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,6 +99,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -111,6 +118,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="configServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sntgzrr.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="eurekaServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sntgzrr.EurekaServerApplication" />
@@ -175,7 +189,8 @@
       <workItem from="1713048844838" duration="13575000" />
       <workItem from="1713190802083" duration="15814000" />
       <workItem from="1713279080702" duration="10209000" />
-      <workItem from="1713306340062" duration="12839000" />
+      <workItem from="1713306340062" duration="13268000" />
+      <workItem from="1713366268616" duration="8669000" />
     </task>
     <servers />
   </component>
