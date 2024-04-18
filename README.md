@@ -16,3 +16,6 @@ Este servicio el cual está conectado a PostgreSQL, genera las diferentes funcio
 
 # eurekaServer
 Cumple con el patrón de diseño Service Registry o Service Discovery. Funciona como un registro de servicios, permitiendo a los microservicios registrarse y descubrir otros servicios en el entorno de ejecución.
+
+# configServer 
+Cumple con el patrón de diseño Central Configuration. es un servicio que gestiona la configuración de las aplicaciones y servicios dentro de un sistema, proporcionando un repositorio centralizado para almacenar y distribuir la configuración de las aplicaciones.
