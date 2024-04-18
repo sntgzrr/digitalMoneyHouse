@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d04df612-bb92-494e-8edf-559ad222e80b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/configServer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaServer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrationUserService/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/sntgzrr/configs/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/sntgzrr/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/sntgzrr/configs/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrationUserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationUserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +22,8 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,7 +72,7 @@
     "Spring Boot.UserServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Curso BackEnd/Microservicios con Spring Cloud/practiceCode",
+    "last_opened_file_path": "C:/Curso BackEnd/Seguridad en microservicios mediante IAM/seguridad-en-microservicios-IAM-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,7 +100,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="configServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sntgzrr.ConfigServerApplication" />
@@ -182,6 +174,8 @@
       <workItem from="1713279080702" duration="10209000" />
       <workItem from="1713306340062" duration="13268000" />
       <workItem from="1713366268616" duration="23746000" />
+      <workItem from="1713405195819" duration="7079000" />
+      <workItem from="1713452093425" duration="2755000" />
     </task>
     <servers />
   </component>
