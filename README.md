@@ -95,3 +95,29 @@ Requerimiento el cual devuelve la lista de tarjetas por el ID del usuario y ver 
 [![SR4R.png](https://i.postimg.cc/Qxg4bDNn/SR4R.png)](https://postimg.cc/bsJ9yKtQ)
 
 Requerimiento el cual elimina una tarjeta por el ID del usuario y el ID de la tarjeta.
+
+# Sprint III
+
+'Como usuario quiero ver toda la actividad realizada con mi billetera, desde la más reciente a la más antigua, para tener el control de mis transacciones.'
+
+[![SR5.png](https://i.postimg.cc/MH7CVjr9/SR5.png)](https://postimg.cc/sG2HR1zW)
+
+[![SR5R.png](https://i.postimg.cc/RCw5jjVw/SR5R.png)](https://postimg.cc/rzyP4Z4p)
+
+Requerimiento el cual devuelve todas las actividades realizadas por el ID del usuario.
+
+'Como usuario necesito el detalle de una actividad en específica.'
+
+[![SR6.png](https://i.postimg.cc/L64CN7q9/SR6.png)](https://postimg.cc/vDjtm0Lk)
+
+[![SR6R.png](https://i.postimg.cc/wTWWPVJh/SR6R.png)](https://postimg.cc/F7Lgk0TR)
+
+Requerimiento el cual devuelve una actividad en específico por el ID del usuario el ID de la trasferencia.
+
+'Como usuario me gustaría ingresar dinero desde mi tarjeta de crédito o débito a mi billetera Digital Money House.'
+
+[![SR7.png](https://i.postimg.cc/rss4tSmk/SR7.png)](https://postimg.cc/64sqk4nj)
+
+[![SR7R.png](https://i.postimg.cc/br5t0sD2/SR7R.png)](https://postimg.cc/GTktd3jc)
+
+Requerimiento el cual realiza una transferencia utilizando una tarjeta.
