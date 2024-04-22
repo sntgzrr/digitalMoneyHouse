@@ -122,3 +122,5 @@ Requerimiento el cual devuelve una actividad en específico por el ID del usuari
 [![SR7R.png](https://i.postimg.cc/br5t0sD2/SR7R.png)](https://postimg.cc/GTktd3jc)
 
 Requerimiento el cual realiza una transferencia utilizando una tarjeta.
+
+Todos estos servicios de 'userService' pueden también ser probados con Postman apuntando al gateway (http://localhost:9090).
