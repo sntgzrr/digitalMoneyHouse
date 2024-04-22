@@ -78,6 +78,7 @@ Requerimiento el cual devuelve las transacciones realizadas por ID del usuario.
 Requerimiento el cual devuelve toda la información del usuario por su ID.
 
 'Como usuario me gustaría ver una lista de las tarjetas de crédito y débito que tengo disponibles para utilizar.'
+Como usuario me gustaría agregar una tarjeta de débito o crédito para utilizarla para cargar saldo o pagar servicios a través de la billetera.
 
 [![CRUD.png](https://i.postimg.cc/x1qrZBby/CRUD.png)](https://postimg.cc/nX8wjR2C)
 
@@ -85,4 +86,12 @@ Requerimiento CRUD de cartas.
 
 [![CardsReq.png](https://i.postimg.cc/Wz2pqSYW/CardsReq.png)](https://postimg.cc/S2vbwLhC)
 
-Requerimiento el cual devuelve la lista de cartas por el ID del usuario y ver una carta en específico por su ID.
+Requerimiento el cual devuelve la lista de tarjetas por el ID del usuario y ver una carta en específico por su ID.
+
+'Como usuario me gustaría eliminar una tarjeta de débito o crédito cuando no quiero utilizarla más a través de la billetera.'
+
+[![SR4.png](https://i.postimg.cc/0jDthRYj/SR4.png)](https://postimg.cc/ZvYFyQDz)
+
+[![SR4R.png](https://i.postimg.cc/Qxg4bDNn/SR4R.png)](https://postimg.cc/bsJ9yKtQ)
+
+Requerimiento el cual elimina una tarjeta por el ID del usuario y el ID de la tarjeta.
