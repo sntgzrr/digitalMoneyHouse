@@ -32,4 +32,10 @@ Acá podemos ver a los usuarios registrados dentro de nuestro Keycloak, como tam
 
 [![Postgres-User-Reg-Acc.png](https://i.postimg.cc/YCbbgSnt/Postgres-User-Reg-Acc.png)](https://postimg.cc/fVScQMQP)
 
-De esta manera, se puede controlar y cumplir con los requerimientos dados dentro del primer Sprint. 
+De esta manera, se puede controlar y cumplir con los requerimientos dados dentro del primer Sprint. Recalco que dentro de la base de datos no se decidió guardar la contraseña de los usuarios por decisiones de seguridad, ya que estas credenciales serán controladas dentro del IAM (Keycloak). Además, decidí utilizar como 'username' el correo del usuario dentro de keycloak, ya que para poder iniciar sesión dentro de nuestra billetera se realiza con email y contraseña, así logrando pedir un token de esta manera:
+
+[![LogUser.png](https://i.postimg.cc/Y0rv1tyw/LogUser.png)](https://postimg.cc/YGP27BHX)
+
+[![SessUser.png](https://i.postimg.cc/x1z1NkTz/SessUser.png)](https://postimg.cc/DS7TtwGv)
+
+Si las credenciales son correctas, Keycloak iniciará una sesión y nos ofrecerá un Token para poder hacer uso de los servicios en nuestra billetera. Así mismo, si queremos realizar logout lo podemos realizar apuntando a la URI 'http://localhost:8080/realms/digital-money-house/protocol/openid-connect/logout'. 
