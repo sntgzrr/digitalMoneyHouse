@@ -16,6 +16,8 @@
 
 # Sprint I
 
+'Como usuario quiero registrarme a Digital Money House para acceder y usar los servicios que ofrece.'
+
 Como se describió anteriormente, el servicio 'registrationUserService' cumple con la tarea de registrar a los usuarios dentro de nuestro IAM, para así, poder manejar de manera efectiva el inicio y cierre de sesión, como también aprovechar las diferentes funciones que Keycloak nos ofrece.
 
 Para realizar el registro de un usuario, es necesario apuntar al endpoint de nuestro servicio, que en este caso lo haremos por medio del gateway 'http://localhost:9090/registration'. Para realizar este registro, no se requiere ninguna autenticación o autorización. En este caso, realizaré una prueba de registro por medio de Postman:
@@ -38,4 +40,14 @@ De esta manera, se puede controlar y cumplir con los requerimientos dados dentro
 
 [![SessUser.png](https://i.postimg.cc/x1z1NkTz/SessUser.png)](https://postimg.cc/DS7TtwGv)
 
-Si las credenciales son correctas, Keycloak iniciará una sesión y nos ofrecerá un Token para poder hacer uso de los servicios en nuestra billetera. Así mismo, si queremos realizar logout lo podemos realizar apuntando a la URI 'http://localhost:8080/realms/digital-money-house/protocol/openid-connect/logout'. 
+'Como usuario quiero acceder a Digital Money House para poder realizar transferencias de fondos.'
+'Como usuario necesito poder cerrar sesión en la billetera Digital Money House.'
+
+Si las credenciales son correctas, Keycloak iniciará una sesión y nos ofrecerá un Token para poder hacer uso de los servicios en nuestra billetera. Así mismo, si queremos realizar logout lo podemos realizar apuntando a la URI 'http://localhost:8080/realms/digital-money-house/protocol/openid-connect/logout'.
+
+# Sprint II
+
+'Como usuario necesito ver, en el inicio, la cantidad de dinero disponible y los últimos 5 movimientos realizados con la billetera Digital Money House.'
+
+
+
