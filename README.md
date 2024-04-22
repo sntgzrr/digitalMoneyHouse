@@ -96,7 +96,7 @@ Requerimiento el cual devuelve la lista de tarjetas por el ID del usuario y ver 
 
 Requerimiento el cual elimina una tarjeta por el ID del usuario y el ID de la tarjeta.
 
-# Sprint III
+# Sprint III - IV
 
 'Como usuario quiero ver toda la actividad realizada con mi billetera, desde la más reciente a la más antigua, para tener el control de mis transacciones.'
 
@@ -115,6 +115,7 @@ Requerimiento el cual devuelve todas las actividades realizadas por el ID del us
 Requerimiento el cual devuelve una actividad en específico por el ID del usuario el ID de la trasferencia.
 
 'Como usuario me gustaría ingresar dinero desde mi tarjeta de crédito o débito a mi billetera Digital Money House.'
+'Como usuario quiero poder enviar/transferir dinero a un CBU/CVU/alias desde mi saldo disponible en mi billetera.'
 
 [![SR7.png](https://i.postimg.cc/rss4tSmk/SR7.png)](https://postimg.cc/64sqk4nj)
 
