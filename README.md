@@ -18,7 +18,7 @@
 
 Como se describió anteriormente, el servicio 'registrationUserService' cumple con la tarea de registrar a los usuarios dentro de nuestro IAM, para así, poder manejar de manera efectiva el inicio y cierre de sesión, como también aprovechar las diferentes funciones que Keycloak nos ofrece.
 
-Para realizar el registro de un usuario, es necesario apuntar al endpoint de nuestro servicio, que en este caso es 'http://localhost:9090/registration'. Para realizar este registro, no se requiere ninguna autenticación o autorización. En este caso, realizaré una prueba de registro por medio de Postman:
+Para realizar el registro de un usuario, es necesario apuntar al endpoint de nuestro servicio, que en este caso lo haremos por medio del gateway 'http://localhost:9090/registration'. Para realizar este registro, no se requiere ninguna autenticación o autorización. En este caso, realizaré una prueba de registro por medio de Postman:
 
 [![Reg.png](https://i.postimg.cc/c1RCXtQM/Reg.png)](https://postimg.cc/6TQBQ3by)
 
