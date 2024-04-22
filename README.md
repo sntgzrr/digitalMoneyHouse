@@ -32,8 +32,4 @@ Acá podemos ver a los usuarios registrados dentro de nuestro Keycloak, como tam
 
 [![Postgres-User-Reg-Acc.png](https://i.postimg.cc/GpL6wNNm/Postgres-User-Reg-Acc.png)](https://postimg.cc/qNF12m4P)
 
-
-
-
-
-
+De esta manera, se puede controlar y cumplir con los requerimientos dados dentro del primer Sprint. 
