@@ -49,5 +49,40 @@ Si las credenciales son correctas, Keycloak iniciará una sesión y nos ofrecer�
 
 'Como usuario necesito ver, en el inicio, la cantidad de dinero disponible y los últimos 5 movimientos realizados con la billetera Digital Money House.'
 
+Para demostrar el funcionamiento de estos servicios, hice uso de Swagger dentro de nuestro 'userService' (http://localhost:8082/swagger-ui/index.html#/). Para poder hacer uso de estas funcionalidades, es necesario estar autorizado, por lo que necesitamos pedir un Token con nuestras credenciales (email y contraseña) y colocarlo dentro de nuestro Swagger, de esta manera:
 
+[![Swagger-Auth.png](https://i.postimg.cc/MG4Tny1V/Swagger-Auth.png)](https://postimg.cc/VSq1T0Gk)
 
+[![Swagger-Bearer-Token.png](https://i.postimg.cc/D0QypHHP/Swagger-Bearer-Token.png)](https://postimg.cc/YL9Hhnpv)
+
+Una vez autorizados para realizar solicitudes a nuestros servicios, podemos probamos la API con los endpoints requeridos para este Sprint.
+
+[![SR1.png](https://i.postimg.cc/hGVwmnds/SR1.png)](https://postimg.cc/kVXfrkwR)
+
+[![SR1R.png](https://i.postimg.cc/Qtby6qSW/SR1R.png)](https://postimg.cc/vg4hTfJQ)
+
+Requerimiento el cual devuelve la información de la cuenta con el dinero disponible por la ID del usuario.
+
+[![SR2.png](https://i.postimg.cc/ZKp4cGp9/SR2.png)](https://postimg.cc/2VksjXHm)
+
+[![SR2R.png](https://i.postimg.cc/bwR8X16p/SR2R.png)](https://postimg.cc/sM1b7GdN)
+
+Requerimiento el cual devuelve las transacciones realizadas por ID del usuario.
+
+'Como usuario quiero ver mi perfil para consultar los datos de mi Cuenta Virtual Uniforme (CVU) y alias provistos por Digital Money House.'
+
+[![SR3.png](https://i.postimg.cc/T1qGRmRV/SR3.png)](https://postimg.cc/tnT8ksnJ)
+
+[![SR3R.png](https://i.postimg.cc/44zXbCzY/SR3R.png)](https://postimg.cc/c6Lq0bkW)
+
+Requerimiento el cual devuelve toda la información del usuario por su ID.
+
+'Como usuario me gustaría ver una lista de las tarjetas de crédito y débito que tengo disponibles para utilizar.'
+
+[![CRUD.png](https://i.postimg.cc/x1qrZBby/CRUD.png)](https://postimg.cc/nX8wjR2C)
+
+Requerimiento CRUD de cartas.
+
+[![CardsReq.png](https://i.postimg.cc/Wz2pqSYW/CardsReq.png)](https://postimg.cc/S2vbwLhC)
+
+Requerimiento el cual devuelve la lista de cartas por el ID del usuario y ver una carta en específico por su ID.
