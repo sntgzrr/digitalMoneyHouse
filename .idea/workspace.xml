@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d04df612-bb92-494e-8edf-559ad222e80b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/sntgzrr/configs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02/storage_v2/_src_/database/digitalMoneyHouse.eDqXuA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02/storage_v2/_src_/database/digitalMoneyHouse.eDqXuA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrationUserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/services/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -72,7 +73,7 @@
     "Spring Boot.UserServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Curso BackEnd/Seguridad en microservicios mediante IAM/seguridad-en-microservicios-IAM-main",
+    "last_opened_file_path": "C:/Curso BackEnd/Desafío profesional back-end/digitalMoneyHouse/back-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,6 +92,9 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -100,7 +104,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+  <component name="RunManager" selected="Spring Boot.RegistrationUserServiceApplication">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="configServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sntgzrr.ConfigServerApplication" />
@@ -151,8 +155,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
-        <option value="jdk-20.0.2-azul-20.0.2-4caba194b151-eb49e076" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -175,7 +179,14 @@
       <workItem from="1713306340062" duration="13268000" />
       <workItem from="1713366268616" duration="23746000" />
       <workItem from="1713405195819" duration="7079000" />
-      <workItem from="1713452093425" duration="2755000" />
+      <workItem from="1713452093425" duration="5286000" />
+      <workItem from="1713479612823" duration="1679000" />
+      <workItem from="1713800486918" duration="122000" />
+      <workItem from="1713801021481" duration="504000" />
+      <workItem from="1713801934607" duration="7687000" />
+      <workItem from="1714065125010" duration="379000" />
+      <workItem from="1716257876118" duration="716000" />
+      <workItem from="1716313877751" duration="15101000" />
     </task>
     <servers />
   </component>

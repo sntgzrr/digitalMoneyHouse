@@ -16,8 +16,12 @@ public class UserController {
     @Autowired
     private final UserServiceImpl userService;
     @PostMapping
-    public User createUser (@RequestBody User user){
-        return this.userService.saveUser(user);
+    public ResponseEntity<?> createUser (@RequestBody User user){
+        User newUser = this.userService.saveUser(user);
+        if (newUser == null) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body("User already exists");
+        }
+        return ResponseEntity.status(HttpStatus.CREATED).body(newUser);
     }
     @GetMapping("/{userId}")
     public ResponseEntity<User> getUserById(@PathVariable Long userId){
