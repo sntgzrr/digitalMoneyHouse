@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d04df612-bb92-494e-8edf-559ad222e80b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/test/java/com/sntgzrr/TestBack/TC_CARDS_001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/test/java/com/sntgzrr/TestBack/TC_DASHB_001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/test/java/com/sntgzrr/TestBack/TC_PROFILE_001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/test/java/com/sntgzrr/TestBack/TC_TRANSFE_001.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02/storage_v2/_src_/database/digitalMoneyHouse.eDqXuA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b8477a74-d353-4c9e-b17a-4a5a2d875a02/storage_v2/_src_/database/digitalMoneyHouse.eDqXuA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/repositories/IUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userService/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.TestsSpringll.getTestDash01.executor": "Run",
+    "JUnit.TestsSpringll.getTestDash02.executor": "Run",
+    "JUnit.TestsSpringll.getTestDash03.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -95,6 +100,14 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.sntgzrr" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sntgzrr.TestBack.Spring2" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -104,7 +117,55 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RegistrationUserServiceApplication">
+  <component name="RunManager">
+    <configuration name="TC_DASHB_001.getTestDash01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sntgzrr.TestBack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sntgzrr.TestBack" />
+      <option name="MAIN_CLASS_NAME" value="com.sntgzrr.TestBack.TC_DASHB_001" />
+      <option name="METHOD_NAME" value="getTestDash01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_DASHB_001.getTestDash02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sntgzrr.TestBack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sntgzrr.TestBack" />
+      <option name="MAIN_CLASS_NAME" value="com.sntgzrr.TestBack.TC_DASHB_001" />
+      <option name="METHOD_NAME" value="getTestDash02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_DASHB_001.getTestDash03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sntgzrr.TestBack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sntgzrr.TestBack" />
+      <option name="MAIN_CLASS_NAME" value="com.sntgzrr.TestBack.TC_DASHB_001" />
+      <option name="METHOD_NAME" value="getTestDash03" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="configServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sntgzrr.ConfigServerApplication" />
@@ -148,6 +209,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TC_DASHB_001.getTestDash03" />
+        <item itemvalue="JUnit.TC_DASHB_001.getTestDash02" />
+        <item itemvalue="JUnit.TC_DASHB_001.getTestDash01" />
         <item itemvalue="Spring Boot.RegistrationUserServiceApplication" />
       </list>
     </recent_temporary>
@@ -186,7 +250,9 @@
       <workItem from="1713801934607" duration="7687000" />
       <workItem from="1714065125010" duration="379000" />
       <workItem from="1716257876118" duration="716000" />
-      <workItem from="1716313877751" duration="15101000" />
+      <workItem from="1716313877751" duration="15708000" />
+      <workItem from="1716409594490" duration="7225000" />
+      <workItem from="1716559043824" duration="14989000" />
     </task>
     <servers />
   </component>
