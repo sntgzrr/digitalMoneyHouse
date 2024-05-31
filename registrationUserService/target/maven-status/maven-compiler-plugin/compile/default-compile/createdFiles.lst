@@ -1,0 +1,8 @@
+com\sntzgrr\controllers\KeycloakUserApi.class
+com\sntzgrr\services\KeycloakUserServiceImpl.class
+com\sntzgrr\configs\WebSecurityConfig.class
+com\sntzgrr\services\KeycloakUserService.class
+com\sntzgrr\configs\Beans.class
+com\sntzgrr\repositories\FeignUserServiceRepository.class
+com\sntzgrr\dto\User.class
+com\sntzgrr\RegistrationUserServiceApplication.class
