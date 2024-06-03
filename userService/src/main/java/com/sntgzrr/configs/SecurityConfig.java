@@ -18,7 +18,7 @@ public class SecurityConfig {
                 )
                 .oauth2ResourceServer(oauth2 -> oauth2
                         .jwt(jwt -> jwt
-                                .jwkSetUri("http://localhost:8080/realms/digital-money-house/protocol/openid-connect/certs")
+                                .jwkSetUri("http://keycloak:8080/realms/digital-money-house/protocol/openid-connect/certs")
                         )
                 );
         return http.build();

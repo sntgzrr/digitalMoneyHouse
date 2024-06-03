@@ -17,7 +17,7 @@ public class SecurityConfig {
                         .pathMatchers(HttpMethod.POST, "/registration/**").permitAll()
                         .anyExchange().authenticated()
                 )
-                .oauth2ResourceServer(oauth2ResourceServer -> oauth2ResourceServer.jwt(jwt -> jwt.jwkSetUri("http://localhost:8080/realms/digital-money-house/protocol/openid-connect/certs")))
+                .oauth2ResourceServer(oauth2ResourceServer -> oauth2ResourceServer.jwt(jwt -> jwt.jwkSetUri("http://keycloak:8080/realms/digital-money-house/protocol/openid-connect/certs")))
                 .csrf(ServerHttpSecurity.CsrfSpec::disable);
         return http.build();
     }

@@ -5,7 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d04df612-bb92-494e-8edf-559ad222e80b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServer/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServer/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServer/target/configServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/target/configServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configServer/target/configServer.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/target/configServer.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaServer/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaServer/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/sntgzrr/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/sntgzrr/configs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/classes/com/sntgzrr/configs/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/com/sntgzrr/configs/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/gateway.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/gateway.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/gateway.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/gateway.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-export/digital-money-house-realm.json" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-export/digital-money-house-realm.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-export/master-realm.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationUserService/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationUserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationUserService/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationUserService/target/registrationUserService.jar" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/target/registrationUserService.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationUserService/target/registrationUserService.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/registrationUserService/target/registrationUserService.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/userService/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/sntgzrr/configs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userService/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/configs/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/configs/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Activity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Transfer.class" beforeDir="false" afterPath="$PROJECT_DIR$/userService/target/classes/com/sntgzrr/models/Transfer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/target/userService.jar" beforeDir="false" afterPath="$PROJECT_DIR$/userService/target/userService.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/target/userService.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/userService/target/userService.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +283,9 @@
       <workItem from="1716597585600" duration="63000" />
       <workItem from="1716939453342" duration="9792000" />
       <workItem from="1716987004252" duration="9342000" />
+      <workItem from="1717117493327" duration="841000" />
+      <workItem from="1717366279292" duration="2871000" />
+      <workItem from="1717370473598" duration="11506000" />
     </task>
     <servers />
   </component>
